@@ -21,6 +21,88 @@ header {
   top: 0;
   z-index: 100;
 }
+@media (min-width: 993px) {
+  header .sideNavClose, header .nabMenuBar {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  header .navbar-nav {
+    display: none;
+  }
+}
+header .nabMenuBar {
+  color: #FE0A52 !important;
+  font-size: 24px !important;
+}
+header .nav-menu-item {
+  text-decoration: none;
+  color: white;
+}
+header .nav-menu-item:hover {
+  text-decoration: none;
+  color: white;
+  border-left: 5px solid white;
+  transition: 0.1s;
+}
+header .sideNavOpen {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: 0.1s;
+  background-color: #FE0A52;
+}
+header .sideNavClose {
+  height: 100%;
+  width: 0px;
+  margin-left: -2%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-top: 20px;
+  transition: 0.1s;
+  background-color: #FE0A52;
+}
+header .ContentOverlay {
+  display: block;
+  position: fixed;
+  height: 100%;
+  top: 6%;
+  left: 0;
+  z-index: 7;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header .ContentOverlayClose {
+  display: none;
+}
+header .Content {
+  margin-left: 60px;
+  margin-top: 60px;
+  z-index: 5;
+}
+@media (max-width: 575.98px) {
+  header .Content {
+    margin-left: 0px;
+  }
+  header .sideNavClose {
+    visibility: hidden;
+  }
+}
+header .navbar-nav {
+  font-size: 15px !important;
+}
 header nav {
   background: #fff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
