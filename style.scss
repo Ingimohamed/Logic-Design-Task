@@ -683,3 +683,30 @@ header {
     }
   }
 }
+
+footer{
+  background-color: black;
+  color: white;
+  .container{
+    .row{
+      ul{
+        padding: 0;
+        list-style-type: none;
+        li{
+          height: 33px;
+          a{
+            color: white;
+            text-decoration: none;
+          }
+          a:hover{
+            color:#8d8d8d;
+          }
+        }
+      }
+    }
+    hr.hr{
+      border-bottom:1px solid white; 
+      width: 100%;
+    }
+  }
+}

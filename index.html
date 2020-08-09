@@ -527,7 +527,7 @@
     <!-- /End Main -->
     <!-- Footer -->
     <footer>
-      <div class="container">
+      <div class="container py-5">
         <div class="row">
           <div class="col-md-3">
             <p>Resources</p>
@@ -552,11 +552,16 @@
             </ul>
           </div>
         </div>
-        <hr>
+        <hr class="hr">
         <p>Connect with us</p>
         <p>Skip the learning curve! Get exclusive discounts, updates, and more.</p>
-        <input class="mail-icon" type="text" placeholder="Enter Email">
-        <button>Get Free Updates</button>
+        <form class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="inputEmail2" class="sr-only">Enter Email</label>
+            <input type="email" class="form-control" id="inputEmail2" placeholder="Enter Email">
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">Get Free Updates</button>
+        </form>
         
         <div class="row">
           <img src="facebook" alt="">

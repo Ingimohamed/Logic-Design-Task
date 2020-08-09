@@ -624,4 +624,27 @@ header nav .container-fluid .right-menu-ul .search-box:before {
   color: #4f6f96;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+footer .container .row ul {
+  padding: 0;
+  list-style-type: none;
+}
+footer .container .row ul li {
+  height: 33px;
+}
+footer .container .row ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .container .row ul li a:hover {
+  color: #8d8d8d;
+}
+footer .container hr.hr {
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
