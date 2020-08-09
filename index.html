@@ -9,7 +9,10 @@
     />
 
     <!-- Bootstrap CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Semi+Expanded:wght@300;500&family=Lato&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Semi+Expanded:wght@300;500&family=Lato&family=Montserrat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
@@ -44,8 +47,7 @@
       <!-- Start Nav Bar -->
       <nav class="navbar navbar-expand-lg shadow-sm sticky-top navbar-light">
         <div class="container-fluid">
-          <a id="NavMenuBar" class="navbar-brand nabMenuBar" href="#"
-            >
+          <a id="NavMenuBar" class="navbar-brand nabMenuBar" href="#">
             <i class="fa fa-bars"></i>
             <!-- <i class="fal fa-bars"></i> -->
           </a>
@@ -145,17 +147,27 @@
               >
             </li>
             <li class="nav-item search-li">
-              <div class="nav-link border-right pad-left-right" id="search-li" href=""
-                ><img
+              <div
+                class="nav-link border-right pad-left-right"
+                id="search-li"
+                href=""
+              >
+                <img
                   class="icon-search"
                   src="assets/images/icon-search.png"
                   alt=""
-              /></div>
+                />
+              </div>
               <div class="search-box" style="display: none;">
                 <form method="get" action="/search">
-                  <input type="text" name="service" autocomplete="off" placeholder="What do you want to learn?">
-      
-                  <img src="assets/images/icon-search.png" width="15">
+                  <input
+                    type="text"
+                    name="service"
+                    autocomplete="off"
+                    placeholder="What do you want to learn?"
+                  />
+
+                  <img src="assets/images/icon-search.png" width="15" />
                 </form>
               </div>
             </li>
@@ -172,36 +184,41 @@
         </div>
       </nav>
 
-<!-- mobile nav view -->
-      <div id="SideNavID"  class="sideNavClose mt-5">
-       <div class="mobile-menue1">
-         <ul>
-           <li><a href="">Subjects ></a></li>
-           <li><a href="">How It Works</a></li>
-           <li><a href="">Teach With Us</a></li>
-         </ul>
-         <a class="nav-link pad-left-right border-up-down" href=""
-                ><img
-                  class="icon-signup"
-                  src="assets/images/icon-avatar.png"
-                  alt=""
-                /><span class="signin-text"> Sign in </span></a
-              >
-         <form method="get" action="/search">
-          <input type="text" name="service" autocomplete="off" placeholder="What do you want to learn?">
+      <!-- mobile nav view -->
+      <div id="SideNavID" class="sideNavClose mt-5">
+        <div class="mobile-menue1">
+          <ul>
+            <li><a href="">Subjects ></a></li>
+            <li><a href="">How It Works</a></li>
+            <li><a href="">Teach With Us</a></li>
+          </ul>
+          <a class="nav-link pad-left-right border-up-down" href=""
+            ><img
+              class="icon-signup"
+              src="assets/images/icon-avatar.png"
+              alt=""
+            /><span class="signin-text"> Sign in </span></a
+          >
+          <form method="get" action="/search">
+            <input
+              type="text"
+              name="service"
+              autocomplete="off"
+              placeholder="What do you want to learn?"
+            />
 
-          <img src="assets/images/icon-search.png" width="15">
-        </form>
-       </div>
-       <div class="mobile-menue2"></div>
-       <div class="mobile-menue3"></div>
-       <div class="mobile-menue4"></div>
-       <div class="mobile-menue5"></div>
-       <div class="mobile-menue6"></div>
-       <div class="mobile-menue7"></div>
-       <div class="mobile-menue8"></div>
-       <div class="mobile-menue9"></div>
-       <div class="mobile-menue10"></div>
+            <img src="assets/images/icon-search.png" width="15" />
+          </form>
+        </div>
+        <div class="mobile-menue2"></div>
+        <div class="mobile-menue3"></div>
+        <div class="mobile-menue4"></div>
+        <div class="mobile-menue5"></div>
+        <div class="mobile-menue6"></div>
+        <div class="mobile-menue7"></div>
+        <div class="mobile-menue8"></div>
+        <div class="mobile-menue9"></div>
+        <div class="mobile-menue10"></div>
       </div>
 
       <div id="ContentOverlayID" class="ContentOverlayClose"></div>
@@ -238,246 +255,519 @@
       <!-- Start section two -->
       <section id="section-two">
         <div class="container py-5">
-          <div class="title text-center">
-            <h1>Teachers, Courses, Maths, English</h1>
+          <div class="title text-center pb-5">
+            <h2 class="sliders-section-h2">
+              Gain skills, have fun, and build a better you
+            </h2>
           </div>
 
-          <!-- Flickity HTML init -->
-          <div class="gallery js-flickity">
+          <!-- Flickity HTML init Teachers -->
+          <div class="row teacher-title">
+            <a href=""><h5 class="title1">Best Teacher</h5></a>
+            <h5 class="title2">Dicsover your best teacher.</h5>
+          </div>
+          <div class="gallery js-flickity pad-left">
             <div class="gallery-cell left-one">
               <div class="item-one">
                 <img src="assets/images/teacher1.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-two">
               <div class="item-one">
                 <img src="assets/images/teacher2.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-three">
               <div class="item-one">
                 <img src="assets/images/teacher3.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-four">
               <div class="item-one">
                 <img src="assets/images/teacher4.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-five">
               <div class="item-one">
                 <img src="assets/images/teacher5.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-six">
               <div class="item-one">
                 <img src="assets/images/teacher6.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-seven">
               <div class="item-one">
                 <img src="assets/images/teacher7.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Flickity HTML init -->
-          <div class="gallery js-flickity">
+          <!-- Flickity HTML init Courses -->
+          <div class="row teacher-title">
+            <a href=""><h5 class="title1">Best Course</h5></a>
+            <h5 class="title2">Dicsover your best Course.</h5>
+          </div>
+
+          <div class="gallery js-flickity pad-left">
             <div class="gallery-cell left-one">
               <div class="item-one">
                 <img src="assets/images/teacher1.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-two">
               <div class="item-one">
                 <img src="assets/images/teacher2.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-three">
               <div class="item-one">
                 <img src="assets/images/teacher3.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-four">
               <div class="item-one">
                 <img src="assets/images/teacher4.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-five">
               <div class="item-one">
                 <img src="assets/images/teacher5.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-six">
               <div class="item-one">
                 <img src="assets/images/teacher6.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-seven">
               <div class="item-one">
                 <img src="assets/images/teacher7.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Flickity HTML init -->
-          <div class="gallery js-flickity">
+          <!-- Flickity HTML init Math -->
+          <div class="row teacher-title">
+            <a href=""><h5 class="long-title1">Learn fourth grade math</h5></a>
+            <h5 class="title2">
+              These courses are aligned with Common Core standards.
+            </h5>
+          </div>
+          <div class="gallery js-flickity pad-left">
             <div class="gallery-cell left-one">
               <div class="item-one">
                 <img src="assets/images/teacher1.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-two">
               <div class="item-one">
                 <img src="assets/images/teacher2.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-three">
               <div class="item-one">
                 <img src="assets/images/teacher3.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-four">
               <div class="item-one">
                 <img src="assets/images/teacher4.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-five">
               <div class="item-one">
                 <img src="assets/images/teacher5.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-six">
               <div class="item-one">
                 <img src="assets/images/teacher6.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-seven">
               <div class="item-one">
                 <img src="assets/images/teacher7.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Flickity HTML init -->
-          <div class="gallery js-flickity">
+          <!-- Flickity HTML init English -->
+          <div class="row teacher-title">
+            <a href=""><h5 class="long-title2">Learn a Language</h5></a>
+            <h5 class="title2">For career, travel, or fun.</h5>
+          </div>
+          <div class="gallery js-flickity pad-left">
             <div class="gallery-cell left-one">
               <div class="item-one">
                 <img src="assets/images/teacher1.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-two">
               <div class="item-one">
                 <img src="assets/images/teacher2.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-three">
               <div class="item-one">
                 <img src="assets/images/teacher3.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-four">
               <div class="item-one">
                 <img src="assets/images/teacher4.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-five">
               <div class="item-one">
                 <img src="assets/images/teacher5.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-six">
               <div class="item-one">
                 <img src="assets/images/teacher6.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
             <div class="gallery-cell left-seven">
               <div class="item-one">
                 <img src="assets/images/teacher7.jpg" />
                 <div class="text-left">English</div>
-                <div class="text-right">star 4.90 (9000)</div>
-                <div class="text-left-bottom">from $40.00 / lesson</div>
+                <div class="text-right">
+                  <img
+                    class="width-star"
+                    src="assets/images/star-2-16.png"
+                    alt=""
+                  />
+                  4.90 <span class="hint-text">(9000)</span>
+                </div>
+                <div class="text-left-bottom hint-text">
+                  from $40.00 / lesson
+                </div>
               </div>
             </div>
           </div>
@@ -527,7 +817,7 @@
     <!-- /End Main -->
     <!-- Footer -->
     <footer>
-      <div class="container py-5">
+      <div class="container py-5 px-5">
         <div class="row">
           <div class="col-md-3">
             <p>Resources</p>
@@ -552,26 +842,56 @@
             </ul>
           </div>
         </div>
-        <hr class="hr">
-        <p>Connect with us</p>
-        <p>Skip the learning curve! Get exclusive discounts, updates, and more.</p>
+        <hr class="hr" />
+        <div class="py-5">
+          <p class="m-0 py-1 font-weight-bold">Connect with us</p>
+          <p class="m-0">
+            Skip the learning curve! Get exclusive discounts, updates, and more.
+          </p>
+        </div>
         <form class="form-inline">
-          <div class="form-group mx-sm-3 mb-2">
-            <label for="inputEmail2" class="sr-only">Enter Email</label>
-            <input type="email" class="form-control" id="inputEmail2" placeholder="Enter Email">
+          <div class="row">
+            <div class="form-group col-md-10">
+              <label for="inputEmail2" class="sr-only">Enter Email</label>
+              <input
+                type="email"
+                class="mailImg col-md-12 form-control"
+                id="inputEmail2"
+                placeholder="Enter Email"
+              />
+            </div>
+            <button type="submit" class="col-md-2 btn mb-2">
+              Get Free Updates
+            </button>
           </div>
-          <button type="submit" class="btn btn-primary mb-2">Get Free Updates</button>
         </form>
-        
-        <div class="row">
-          <img src="facebook" alt="">
-          <img src="youtube" alt="">
-          <img src="instagram" alt="">
+
+        <div class="row py-5">
+          <a href=""
+            ><img
+              class="social-icons"
+              src="assets/images/facebook-4-128.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="social-icons"
+              src="assets/images/youtube-4-128.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              class="social-icons"
+              src="assets/images/instagram-4-128.png"
+              alt=""
+          /></a>
         </div>
 
-        <p>© 2020 TakeLessons, All Rights Reserved</p>
-        <a href="">Terms of Use</a>
-        <a href="">Privacy</a>
+        <ul>
+          <li class="py-3">© 2020 TakeLessons, All Rights Reserved</li>
+          <li class="py-3"><a href="">Terms of Use</a></li>
+          <li class="py-3"><a href="">Privacy</a></li>
+        </ul>
       </div>
     </footer>
     <!-- /Footer -->
@@ -595,14 +915,7 @@
       crossorigin="anonymous"
     ></script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.js"
-      integrity="sha512-EgQ3k60bpYDNy8LfEAUb6HtkruEfT/9fh+/PocoORSVwxYAt38rs1FwKytwe7U1RLEuJHo6RF8pWrZXNfAnESA=="
-      crossorigin="anonymous"
-    ></script>
-
-
-
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- script of nav bar -->
     <script type="text/javascript">
@@ -636,11 +949,10 @@
       }
     </script>
     <script>
-      $(document).ready(function(){
-        $("#search-li").click(function(){
+      $(document).ready(function () {
+        $("#search-li").click(function () {
           $(".search-box").toggle();
         });
- 
       });
     </script>
 
