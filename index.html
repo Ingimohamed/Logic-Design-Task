@@ -8,15 +8,15 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Encode+Sans+Semi+Expanded:wght@300;500&family=Lato&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
     <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
-    crossorigin="anonymous"
-  />
-   
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -24,11 +24,11 @@
       crossorigin="anonymous"
     />
     <link
-    href="https://www.jqueryscript.net/css/jquerysctipttop.css"
-    rel="stylesheet"
-    type="text/css"
-  />
-   
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="flickity.css" media="screen" />
 
@@ -42,54 +42,166 @@
     <!-- Start Header -->
     <header>
       <!-- Start Nav Bar -->
-      <nav
-        class="navbar navbar-expand-lg shadow-sm sticky-top navbar-light"
-      >
+      <nav class="navbar navbar-expand-lg shadow-sm sticky-top navbar-light">
         <div class="container-fluid">
           <a id="NavMenuBar" class="navbar-brand nabMenuBar" href="#"
-            ><i class="fa fa-bars"></i>
+            >
+            <i class="fa fa-bars"></i>
+            <!-- <i class="fal fa-bars"></i> -->
           </a>
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0 brand-menu-ul">
-            <li class="nav-item"><a class="nav-link brand-menu-a" href=""><img src="assets/images/logo33.png" alt=""></a></li>
+            <li class="nav-item">
+              <a class="nav-link brand-menu-a" href=""
+                ><img src="assets/images/logo33.png" alt=""
+              /></a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-auto mr-auto mt-2 mt-lg-0 middle-menu">
-            <li class="nav-item">
-              <a class="nav-link" href="">Browse <span class="wideOnly">Private</span> Lessons</a>
+            <li class="nav-item privateLessons-dropdown border-bottom-hover">
+              <a class="nav-link private-a" href=""
+                >Browse <span class="wideOnly">Private</span> Lessons
+                <img
+                  class="down-arrow-icon"
+                  src="assets/images/icon-down-arrow.png"
+                  alt=""
+              /></a>
+              <div class="dropdown-div">
+                <div class="lists-div1">
+                  <div class="column1">
+                    <div class="col-title"><a href="">Music</a></div>
+                    <ul>
+                      <li>Piano</li>
+                      <li>Singing</li>
+                      <li>Guitar</li>
+                      <li>Violin</li>
+                      <li>Cello</li>
+                      <li>Drums</li>
+                    </ul>
+                    <a>More ></a>
+                  </div>
+                  <div class="column2">
+                    <div class="col-title"><a href="">Language</a></div>
+                    <ul>
+                      <li>Spanish</li>
+                      <li>ASL</li>
+                      <li>Korean</li>
+                      <li>Japanes</li>
+                      <li>French</li>
+                      <li>English</li>
+                    </ul>
+                    <a>More ></a>
+                  </div>
+                  <div class="column3">
+                    <div class="col-title">
+                      <a href="">Academic Tutoring</a>
+                    </div>
+                    <ul>
+                      <li>Math</li>
+                      <li>Algebra</li>
+                      <li>Reading</li>
+                      <li>Writing</li>
+                      <li>Chemistry</li>
+                      <li>SAT</li>
+                    </ul>
+                    <a>More ></a>
+                  </div>
+                  <div class="column4">
+                    <div class="col-title"><a href="">Other Subjects</a></div>
+                    <ul>
+                      <li>Computer Skills</li>
+                      <li>Crafts &amp; Hobbies</li>
+                      <li>Performing Arts</li>
+                      <li>Visual Arts</li>
+                    </ul>
+                    <a>All Subjects ></a>
+                  </div>
+                </div>
+                <div class="image-div2">
+                  <img src="assets/images/logo33.png" alt="" />
+                  <div class="div2-text">
+                    Hello Every Body <br />
+                    Welcome in our website.
+                  </div>
+                  <a href="">Learn More</a>
+                </div>
+              </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">How It Works</a>
+            <li class="nav-item border-bottom-hover">
+              <a class="nav-link private-a" href="">How It Works</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Teach With Us</a>
+            <li class="nav-item border-bottom-hover">
+              <a class="nav-link private-a" href="">Teach With Us</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0 right-menu-ul">
             <li class="nav-item">
-              <a class="nav-link border-right pad-left-right" href=""><img class="icon-phone" src="assets/images/icon-phone.png" alt=""> <span class="phone-num-text">123-123-1234</span></a>
+              <a class="nav-link border-right pad-left-right" href=""
+                ><img
+                  class="icon-phone"
+                  src="assets/images/icon-phone.png"
+                  alt=""
+                />
+                <span class="phone-num-text">123-123-1234</span></a
+              >
+            </li>
+            <li class="nav-item search-li">
+              <div class="nav-link border-right pad-left-right" id="search-li" href=""
+                ><img
+                  class="icon-search"
+                  src="assets/images/icon-search.png"
+                  alt=""
+              /></div>
+              <div class="search-box" style="display: none;">
+                <form method="get" action="/search">
+                  <input type="text" name="service" autocomplete="off" placeholder="What do you want to learn?">
+      
+                  <img src="assets/images/icon-search.png" width="15">
+                </form>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link border-right pad-left-right" href=""><img class="icon-search" src="assets/images/icon-search.png" alt=""></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pad-left-right" href=""><img class="icon-signup" src="assets/images/icon-avatar.png" alt=""><span class="signin-text"> Sign in </span></a>
+              <a class="nav-link pad-left-right" href=""
+                ><img
+                  class="icon-signup"
+                  src="assets/images/icon-avatar.png"
+                  alt=""
+                /><span class="signin-text"> Sign in </span></a
+              >
             </li>
           </ul>
         </div>
       </nav>
 
-      <div id="SideNavID" style="" class="sideNavClose mt-5">
-        <a class="nav-menu-item d-none" href="#"
-          ><i class="fa m-2 fa-home"></i>Home</a
-        ><br />
-        <a class="nav-menu-item d-none" href="#"
-          ><i class="fa m-2 fa-envelope"></i>Contact</a
-        ><br />
-        <a class="nav-menu-item d-none" href="#"
-          ><i class="fa m-2 fa-question-circle"></i>About</a
-        ><br />
-        <a class="nav-menu-item d-none" href="#"
-          ><i class="fa m-2 fa-globe"></i>Settings</a
-        ><br />
+<!-- mobile nav view -->
+      <div id="SideNavID"  class="sideNavClose mt-5">
+       <div class="mobile-menue1">
+         <ul>
+           <li><a href="">Subjects ></a></li>
+           <li><a href="">How It Works</a></li>
+           <li><a href="">Teach With Us</a></li>
+         </ul>
+         <a class="nav-link pad-left-right border-up-down" href=""
+                ><img
+                  class="icon-signup"
+                  src="assets/images/icon-avatar.png"
+                  alt=""
+                /><span class="signin-text"> Sign in </span></a
+              >
+         <form method="get" action="/search">
+          <input type="text" name="service" autocomplete="off" placeholder="What do you want to learn?">
+
+          <img src="assets/images/icon-search.png" width="15">
+        </form>
+       </div>
+       <div class="mobile-menue2"></div>
+       <div class="mobile-menue3"></div>
+       <div class="mobile-menue4"></div>
+       <div class="mobile-menue5"></div>
+       <div class="mobile-menue6"></div>
+       <div class="mobile-menue7"></div>
+       <div class="mobile-menue8"></div>
+       <div class="mobile-menue9"></div>
+       <div class="mobile-menue10"></div>
       </div>
 
       <div id="ContentOverlayID" class="ContentOverlayClose"></div>
@@ -101,8 +213,8 @@
     <main>
       <!-- Start Section one -->
       <!-- start cover header video -->
-      <div id="video-section">
-        <video autoplay muted loop id="myVideo">
+      <div id="video-section" class="embed-responsive">
+        <video class="embed-responsive-item" autoplay muted loop id="myVideo">
           <source
             src="assets/videos/girl_walking_rain_umbrella_red_city.mp4"
             type="video/mp4"
@@ -441,6 +553,9 @@
       crossorigin="anonymous"
     ></script>
 
+
+
+
     <!-- script of nav bar -->
     <script type="text/javascript">
       $("#NavMenuBar").click(function () {
@@ -471,6 +586,14 @@
           ContentOverlayID.addClass("ContentOverlayClose");
         }
       }
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#search-li").click(function(){
+          $(".search-box").toggle();
+        });
+ 
+      });
     </script>
 
     <!-- /script of nav bar -->

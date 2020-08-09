@@ -14,7 +14,7 @@ https://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 300px !important;
-  overflow-x: auto !important;
+  /* overflow-x: auto !important; */
   display: grid;
   grid-template-columns: repeat(7, 253px);
   grid-column-gap: 10px;
