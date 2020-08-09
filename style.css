@@ -27,7 +27,8 @@ header a {
   font-family: "mulish", sans-serif;
 }
 @media (min-width: 993px) {
-  header .sideNavClose, header .nabMenuBar {
+  header .sideNavClose,
+header .nabMenuBar {
     display: none;
   }
 }
@@ -37,7 +38,7 @@ header a {
   }
 }
 header .nabMenuBar {
-  color: #FE0A52 !important;
+  color: #fe0a52 !important;
   font-size: 24px !important;
 }
 header .nav-menu-item {
@@ -61,7 +62,7 @@ header .sideNavOpen {
   padding-left: 10px;
   padding-top: 20px;
   transition: 0.1s;
-  background-color: #FE0A52;
+  background-color: #fe0a52;
 }
 header .sideNavClose {
   height: 100%;
@@ -75,7 +76,7 @@ header .sideNavClose {
   padding-left: 10px;
   padding-top: 20px;
   transition: 0.1s;
-  background-color: #FE0A52;
+  background-color: #fe0a52;
 }
 header .ContentOverlay {
   display: block;
@@ -111,22 +112,46 @@ header nav {
   background-color: white !important;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
-header nav .brand-menu-ul li .brand-menu-a {
+header nav a:hover {
+  text-decoration: none;
+}
+header nav .container-fluid .right-menu-ul .phone-num-text {
+  color: #404040;
+  font-size: 1em;
+  font-weight: 600;
+}
+header nav .container-fluid .right-menu-ul .signin-text {
+  font-size: 1em;
+  font-weight: 400;
+}
+header nav .container-fluid .right-menu-ul .pad-left-right {
+  padding: 0 20px;
+}
+header nav .container-fluid .right-menu-ul .border-right {
+  border-right: 1px solid #cecece;
+}
+header nav .container-fluid .right-menu-ul .icon-phone {
+  width: 13px;
+  display: inline-block;
+}
+header nav .container-fluid .right-menu-ul .icon-search {
+  width: 15px;
+  display: inline-block;
+}
+header nav .container-fluid .right-menu-ul .icon-signup {
+  width: 32px;
+  display: inline-block;
+}
+header nav .container-fluid .brand-menu-ul li .brand-menu-a {
   align-items: center !important;
   display: flex;
   margin-right: 30px !important;
 }
-header nav .brand-menu-ul li .brand-menu-a img {
+header nav .container-fluid .brand-menu-ul li .brand-menu-a img {
   display: block !important;
   height: 30px !important;
 }
-header nav .middle-menu {
-  align-items: stretch !important;
-  display: flex !important;
-  flex: 1 !important;
-  justify-content: center !important;
-}
-header nav .middle-menu ul {
+header nav .container-fluid .middle-menu {
   align-items: stretch !important;
   display: flex !important;
   flex: 1 !important;
@@ -134,8 +159,17 @@ header nav .middle-menu ul {
   margin: 0 !important;
   max-width: 540px !important;
   padding: 0 !important;
+  height: 70px;
 }
-header nav .middle-menu ul li {
+header nav .container-fluid .middle-menu .wideOnly {
+  display: none;
+}
+@media (min-width: 1200px) {
+  header nav .container-fluid .middle-menu .wideOnly {
+    display: initial;
+  }
+}
+header nav .container-fluid .middle-menu li {
   align-items: stretch !important;
   border-bottom: 4px solid transparent !important;
   display: flex !important;
@@ -143,7 +177,7 @@ header nav .middle-menu ul li {
   padding: 0 !important;
   transition: 0.2s border-color !important;
 }
-header nav .middle-menu ul li a {
+header nav .container-fluid .middle-menu li a {
   align-items: center !important;
   color: #404040 !important;
   display: flex !important;
@@ -151,8 +185,8 @@ header nav .middle-menu ul li a {
   font-weight: 600 !important;
   padding: 4px 10px 0 10px !important;
 }
-header nav .middle-menu ul li:hover {
-  border-bottom: 4px solid #4F6F96 !important;
+header nav .container-fluid .middle-menu li:hover {
+  border-bottom: 4px solid #4f6f96 !important;
 }
 
 #video-section {
@@ -194,12 +228,12 @@ header nav .middle-menu ul li:hover {
   padding-left: 50px;
   padding-right: 50px;
   /*.gallery-cell.is-selected {
-    background: #ED2;
-  }*/
+          background: #ED2;
+        }*/
   /* cell number */
 }
 #section-two .container h1 {
-  color: #4F6F96;
+  color: #4f6f96;
 }
 #section-two .container .gallery {
   background: white;
@@ -271,13 +305,16 @@ header nav .middle-menu ul li:hover {
 }
 
 #section-three {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
-#section-three .container h1, #section-three .container p {
-  color: #4F6F96;
+#section-three .container h1,
+#section-three .container p {
+  color: #4f6f96;
 }
-#section-three .container .row h1, #section-three .container .row p, #section-three .container .row h4 {
-  color: #4F6F96;
+#section-three .container .row h1,
+#section-three .container .row p,
+#section-three .container .row h4 {
+  color: #4f6f96;
 }
 
 /*# sourceMappingURL=style.css.map */
