@@ -21,6 +21,11 @@ header {
   top: 0;
   z-index: 100;
 }
+header a {
+  color: #404040;
+  font-weight: 600;
+  font-family: "mulish", sans-serif;
+}
 @media (min-width: 993px) {
   header .sideNavClose, header .nabMenuBar {
     display: none;
@@ -100,12 +105,54 @@ header .Content {
     visibility: hidden;
   }
 }
-header .navbar-nav {
-  font-size: 15px !important;
-}
 header nav {
-  background: #fff;
+  padding: 0 !important;
+  height: 70px !important;
+  background-color: white !important;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+header nav .brand-menu-ul li .brand-menu-a {
+  align-items: center !important;
+  display: flex;
+  margin-right: 30px !important;
+}
+header nav .brand-menu-ul li .brand-menu-a img {
+  display: block !important;
+  height: 30px !important;
+}
+header nav .middle-menu {
+  align-items: stretch !important;
+  display: flex !important;
+  flex: 1 !important;
+  justify-content: center !important;
+}
+header nav .middle-menu ul {
+  align-items: stretch !important;
+  display: flex !important;
+  flex: 1 !important;
+  justify-content: space-between !important;
+  margin: 0 !important;
+  max-width: 540px !important;
+  padding: 0 !important;
+}
+header nav .middle-menu ul li {
+  align-items: stretch !important;
+  border-bottom: 4px solid transparent !important;
+  display: flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: 0.2s border-color !important;
+}
+header nav .middle-menu ul li a {
+  align-items: center !important;
+  color: #404040 !important;
+  display: flex !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  padding: 4px 10px 0 10px !important;
+}
+header nav .middle-menu ul li:hover {
+  border-bottom: 4px solid #4F6F96 !important;
 }
 
 #video-section {
