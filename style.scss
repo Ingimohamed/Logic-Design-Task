@@ -677,6 +677,15 @@ h2{
   margin-bottom: -29px;
   z-index: 1;
   margin-left: 69px;
+  .sub-name{
+    padding-right: 10px;
+    font-weight: bold;
+  }
+  .border-leftt{
+    border-left: 3px solid #ccc;
+    padding-left: 10px;
+    font-weight: 400;
+  }
 }
 .test-newSlider{  
   z-index: -1;

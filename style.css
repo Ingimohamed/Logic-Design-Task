@@ -637,6 +637,15 @@ header nav .container-fluid .right-menu-ul .search-box:before {
   z-index: 1;
   margin-left: 69px;
 }
+#section-two .container .slider-title .sub-name {
+  padding-right: 10px;
+  font-weight: bold;
+}
+#section-two .container .slider-title .border-leftt {
+  border-left: 3px solid #ccc;
+  padding-left: 10px;
+  font-weight: 400;
+}
 #section-two .container .test-newSlider {
   z-index: -1;
   display: block;
