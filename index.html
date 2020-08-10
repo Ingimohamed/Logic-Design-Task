@@ -295,7 +295,27 @@
               Gain skills, have fun, and build a better you
             </h2>
           </div>
-
+<!-- Test new sliders -->
+<div class="test-newSlider">
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+      <div class="swiper-slide">Resize me!</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+<!--/ test new sliders -->
           <!-- Flickity HTML init Teachers -->
           <div class="row teacher-title">
             <a href=""><h5 class="title1">Best Teacher</h5></a>
@@ -846,7 +866,7 @@
           <div class="slider-autoplay">
              <!-- Swiper -->
              <!-- Swiper -->
-  <div class="swiper-container">
+  <div class="swiper-container sw-cont">
     <div class="swiper-wrapper">
       <div class="swiper-slide">Slide 1</div>
       <div class="swiper-slide">Slide 2</div>
@@ -860,10 +880,10 @@
       <div class="swiper-slide">Slide 10</div>
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination sw-pag"></div>
     <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next sw-bu-ne"></div>
+    <div class="swiper-button-prev sw-bu-pre"></div>
   </div>
              <!--/swiper-->
             </div>
@@ -1022,7 +1042,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.sw-cont', {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -1030,12 +1050,12 @@
         disableOnInteraction: false,
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.sw-pag',
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.sw-bu-ne',
+        prevEl: '.sw-bu-pre',
       },
     });
   </script>
@@ -1080,6 +1100,28 @@
       });
     </script>
 
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    direction: getDirection(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      }
+    }
+  });
+
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+</script>
    
     <!-- /script of nav bar -->
   </body>
