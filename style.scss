@@ -669,8 +669,6 @@ header {
     position: relative;
     width: 1000px;
     height: 300px;
-
-   
     background: #eee;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -685,6 +683,9 @@ header {
   }
 
   .swiper-slide {
+    .img-grid{
+      border-radius: 4px;
+    }
     text-align: center;
     font-size: 18px;
     background: #fff;

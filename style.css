@@ -666,6 +666,9 @@ header nav .container-fluid .right-menu-ul .search-box:before {
   -webkit-align-items: center;
   align-items: center;
 }
+#section-two .container .test-newSlider .swiper-slide .img-grid {
+  border-radius: 4px;
+}
 @media (max-width: 760px) {
   #section-two .container .test-newSlider .swiper-button-next {
     right: 20px;
