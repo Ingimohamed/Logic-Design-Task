@@ -8,6 +8,10 @@ body {
   margin-right: auto;
 }
 
+.blue-color {
+  color: #4f6f96;
+}
+
 #logo-section {
   padding: 10px 0px;
 }
@@ -622,7 +626,22 @@ header nav .container-fluid .right-menu-ul .search-box:before {
   }
 }
 
+#section-two .container h2 {
+  color: #4f6f96;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.16;
+}
+#section-two .container .slider-title {
+  margin-bottom: -29px;
+  z-index: 1;
+  margin-left: 69px;
+}
 #section-two .container .test-newSlider {
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   width: 1000px;
   height: 300px;
@@ -630,7 +649,6 @@ header nav .container-fluid .right-menu-ul .search-box:before {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
-  margin: 0;
   padding: 0;
 }
 #section-two .container .test-newSlider .swiper-container {
@@ -725,6 +743,26 @@ header nav .container-fluid .right-menu-ul .search-box:before {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+#section-under-sliders .container .slider-autoplay .swiper-slide .quote {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 500px;
+  padding: 20px;
+}
+#section-under-sliders .container .slider-autoplay .swiper-slide .quote blockquote {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 36px;
+  margin: 0 auto;
+  padding: 0 0 48px 0;
+  -webkit-font-smoothing: antialiased;
+}
+#section-under-sliders .container .slider-autoplay .swiper-slide .quote blockquote img {
+  max-width: 32px;
+  margin-bottom: 8px;
 }
 
 #section-three {

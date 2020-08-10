@@ -4,6 +4,9 @@ body{font-family: 'Oswald', sans-serif;}
   margin-left: auto;
   margin-right: auto;
 }
+.blue-color{
+  color:#4f6f96;
+}
 #logo-section {
   padding: 10px 0px;
   img {
@@ -664,8 +667,22 @@ header {
 
 #section-two {
   .container {
-
+h2{
+  color:#4f6f96;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.16;
+}
+.slider-title{
+  margin-bottom: -29px;
+  z-index: 1;
+  margin-left: 69px;
+}
 .test-newSlider{  
+  z-index: -1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
     position: relative;
     width: 1000px;
     height: 300px;
@@ -673,7 +690,7 @@ header {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
-    margin: 0;
+   
     padding: 0;
   
 
@@ -766,6 +783,26 @@ header {
       }
   
       .swiper-slide {
+        .quote{
+          color: white;
+          font-size: 14px;
+          font-weight: bold;
+          max-width: 500px;
+          padding: 20px;
+              blockquote {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: normal;
+                line-height: 36px;
+                margin: 0 auto;
+                padding: 0 0 48px 0;
+                -webkit-font-smoothing: antialiased;
+                img{
+                  max-width: 32px;
+                  margin-bottom: 8px;
+                }
+            }
+        }
         text-align: center;
         font-size: 18px;
         background: #fff;
