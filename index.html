@@ -35,6 +35,11 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="flickity.css" media="screen" />
 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+   
+
     <title>Lynda</title>
   </head>
   <body>
@@ -815,6 +820,56 @@
         </div>
       </section>
       <!-- /End Section two -->
+      <!-- Section under sliders -->
+      <section id="section-under-sliders">
+        <div class="container pb-5 pt-2">
+          <div class="pb-4">
+            <h2 class="text-center font-weight-bold">Connect Locally or Online</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <img class="img-center my-3" src="assets/images/local.png" alt="">
+              <h4 class="text-center font-weight-bold">Local Lessons</h4>
+              <p class="text-center">No matter where you live,
+                 chances are we can introduce you to an amazing teacher in your neighborhood.
+                  You can take lessons in the privacy of your own home or at your teacher's location.</p>
+            </div>
+            <div class="col-md-6">
+              <img class="img-center my-3" src="assets/images/online.png" alt="">
+              <h4 class="text-center font-weight-bold">Online Lessons</h4>
+              <p class="text-center">Is your dream teacher on the other side of the country?
+                 No problem. Now, you can meet your teacher online on your smartphone or using a 
+                 webcam on your computer. The world is your classroom!</p>
+            </div>
+          </div>
+          <!-- Slider Autoplay-->
+          <div class="slider-autoplay">
+             <!-- Swiper -->
+             <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+             <!--/swiper-->
+            </div>
+        </div>
+      </section>
+      <!-- /Section under sliders -->
       <!-- Start Section three -->
       <section id="section-three">
         <div class="container py-5">
@@ -962,6 +1017,30 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- slider-autoplay-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+    <!--/slider autoplay-->
+
     <!-- script of nav bar -->
     <script type="text/javascript">
       $("#NavMenuBar").click(function () {
@@ -1001,6 +1080,7 @@
       });
     </script>
 
+   
     <!-- /script of nav bar -->
   </body>
 </html>
